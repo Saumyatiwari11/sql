@@ -1,0 +1,19 @@
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0004,'hive','Accounting');
+INSERT INTO EMPLOYEE VALUES(0005,'eva','Sales');
+INSERT INTO EMPLOYEE VALUES(0006,'ruskin','Accounting');
+INSERT INTO EMPLOYEE VALUES(0007,'ergy','Sales');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE dept = 'Sales';
+SELECT * FROM EMPLOYEE WHERE dept = 'Accounting';
